@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+       
+<body>
+
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <div class="footer-top sp-five">
+            <div class="container">
+                <div class="row">
+
+                    <div class="colmun col-xl-4 col-md-6 col-sm-12">
+                        <div class="about-colmun">
+                            <div class="footer-logo mb-20">
+                                <a href="{% url 'index' %}"><img src="{% static 'web/images/footer-logo.png' %}"
+                                        alt=""></a>
+                            </div>
+                            <div class="text">Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor
+                                incididunt ut labore dolore magna aliqua enim minim veniam quis nostrud exercita
+                                ullam laboris</div>
+                        </div>
+                    </div>
+
+                    <div class="colmun col-xl-2 col-md-6 col-sm-12">                                                                 
+                        <div class="service-colmun">               
+                            <div class="footer-title mb-30">
+                                <h6>Quick Link</h6>
+                            </div>
+                            <ul class="service-list">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">Profile</a></li>
+                                <li><a href="{% url 'services' %}">Awards</a></li>
+                                <li><a href="{% url 'services-details' %}">Business Sector</a></li>
+                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                <li><a href="{% url 'blog' %}">Updates</a></li>
+                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="colmun col-xl-3 col-md-6 col-sm-12">
+                        <div class="schedul-colmun">
+                            <div class="footer-title mb-30">
+                                <h6>Social Media </h6>
+                            </div>
+                            <ul class="social-links mt-30">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="colmun col-xl-3 col-md-6 col-sm-12">
+                        <div class="contact-colmun">
+                            <div class="footer-title mb-30">
+                                <h6>Contact</h6>
+                            </div>
+                            <ul class="contact-list">
+                                <li><a href="#">4708 Ruecker Wall, Kassandra town, HI 97729</a></li>
+                                <li><a href="#">+2(305) 587-3407</a></li>
+                                <li><a href="#">info@danbury.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom black-bg">
+            <div class="container clearfix">
+                <div class="footer-copyright float-left"><a href="{% url 'index' %}">Danbury</a> &copy; 2023 <a class="text-success" href="https://gedexo.com/">Gedexo</a> All
+                    Right Reserved</div>
+                <ul class="terms-service float-right">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End Main Footer-->
+    
+</body>
+
+</html>

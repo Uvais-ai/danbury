@@ -1,0 +1,166 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us || Danbury || Responsive HTML 5 Template</title>
+
+</head>
+
+<body>
+    
+
+
+        <!-- Page Title -->
+        <section class="page-title sp-six" style="background: url({% static 'web/images/background/parallax-2.jpg' %});">
+            <div class="container">
+                <div class="page-title-area text-center">
+                    <div class="title-text">
+                        <h1>Profile Us</h1>
+                    </div>
+                    <ul class="page-list">
+                        <li><a href="{% url 'index' %}">home</a></li>
+                        <li>-</li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Page Title -->
+
+
+        <!-- About Us -->
+        <section class="about-us sp-one ok">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 about-colmun">
+                        <div class="about-text-one mb-80">
+                            <div class="sec-title-one mb-40">
+                                <h5>Our Journey</h5>
+                                <h2 class="Expertiseh2"><span class="Expertisespan">Two Decades<br> of</span> Expertise</h2>
+                            </div>
+                            <div class="text mb-45">Discover our remarkable journey through twenty years of dedication and excellence. We take pride in our commitment to delivering exceptional experiences, making us your trusted partner in every step of the way.</div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="image-box mb-80">
+                            <div class="image-1">
+                                <img src="{% static 'web/images/resource/about.jpg' %}" alt="">
+                            </div>
+                            <div class="image-2">
+                                <img src="{% static 'web/images/resource/about-2.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </section>
+        <!-- End About Us -->
+
+
+        <!--Fact Counter-->
+        <div class="fact-counter sp-five" style="background: url({% static 'web/images/background/parallax-1.jpg' %});">
+            <div class="container">
+                <div class="row">
+                    <!--Column-->
+                    <article class="counter-column col-xl-3 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="900ms">
+                        <div class="item">
+                            <div class="inner-box text-center">
+                                <div class="icon-box">
+                                    <i class="flaticon-weightlifting"></i>
+                                </div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="642">0</span>
+                                    <p>Work Sesisons</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Column-->
+                    <article class="counter-column col-xl-3 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="300ms">
+                        <div class="item">
+                            <div class="inner-box text-center">
+                                <div class="icon-box">
+                                    <i class="flaticon-smiling-emoticon-square-face"></i>
+                                </div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="746">0</span>
+                                    <p>Happy Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Column-->
+                    <article class="counter-column col-xl-3 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="600ms">
+                        <div class="item">
+                            <div class="inner-box text-center">
+                                <div class="icon-box">
+                                    <i class="flaticon-coffee-cup"></i>
+                                </div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="3456">0</span>
+                                    <p>Coffe Cups</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!--Column-->
+                    <article class="counter-column col-xl-3 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="900ms">
+                        <div class="item">
+                            <div class="inner-box text-center">
+                                <div class="icon-box">
+                                    <i class="flaticon-heart"></i>
+                                </div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="431">0</span>
+                                    <p>Days of Programs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!--End Fact Counter-->
+
+        <!-- Why Choose -->
+    <section class="why-chooseus sp-four">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <div class="choose-left-content">
+                        <div class="sec-title-one">
+                            <h5>Our Qualification</h5>
+                            <h2 class="Expertiseh2"><span class="Expertisespan">Why People</span><br> Choose Danbury</h2>
+                        </div>
+                        <div class="text mt-45">
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                            <p>Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <div class="choose-right-area">
+                        <figure>
+                            <img src="{% static 'web/images/resource/shoose-us-1.jpg' %}" alt="">
+                        </figure>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Why Choose -->
+
+</body>
+
+</html>
+
+{% endblock  %}

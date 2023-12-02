@@ -1,0 +1,108 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Details || Danbury || Responsive HTML 5 Template</title>
+
+</head>
+
+<body>
+
+    <!-- Page Title -->
+    <section class="page-title sp-six" style="background: url({% static 'web/images/background/parallax-2.jpg' %});">
+        <div class="container">
+            <div class="page-title-area text-center">
+                <div class="title-text">
+                    <h1>Our Articles</h1>
+                </div>
+                <ul class="page-list">
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li>-</li>
+                    <li>Our Articles</li>
+                </ul>
+            </div>                
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+
+    <!-- Blog Details -->
+    <section class="blog-details sp-nine">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-md-12 col-sm-12">
+                    <div class="blog-left-area">
+                        <div class="news-block-two">
+                            <figure>
+                                <img src="{% static 'web/images/resource/blog-4.jpg' %}" alt="">
+                            </figure>
+                            <ul class="blog-info mt-50 mb-30">
+                                <li><i class="fa fa-user"></i><a href="#">admin</a></li>
+                                <li><i class="fa fa-calendar"></i>350</li>
+                                <li><i class="fa fa-commenting-o"></i>30</li>
+                            </ul>
+                            <h2 class="fw-bold">Exploring the World of Fitness</h2>
+                            <p>Delve into the exciting world of fitness with our comprehensive guide. From uncovering effective exercise programs to achieving a balanced body and mind, this article provides insights into improving health and personal fitness. Join us on this journey to a healthier you!</p>
+
+                            <p>Discover the joys of physical activity and learn how to integrate it seamlessly into your daily routine. Our article delves into the benefits of various exercises, providing a holistic approach to enhancing your overall well-being.</p>    
+                        </div>
+                    </div>                 
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12">
+                    <div class="blog-right-area">
+                        <div class="category-list-area mb-30">
+                            <div class="sec-title-two mb-35">
+                                <h5>Category</h5>
+                            </div>
+                            <ul class="category-list">
+                                <li><a href="#">Exercise Program (6)</a></li>
+                                <li><a href="#">Balance Body Mind (9)</a></li>
+                                <li><a href="#">Physical Activity (7)</a></li>
+                                <li><a href="#">Improving Health (5)</a></li>
+                                <li><a href="#">Personal Fitness (3)</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog-list-area mb-30">
+                            <div class="sec-title-two mb-35">
+                                <h5>Latest Articles</h5>
+                            </div>
+                            <div class="blog-item-one">
+                                <figure>
+                                    <img src="{% static 'web/images/resource/blog-1.jpg' %}" alt="">
+                                </figure>
+                                <h6><a href="#">Maecena Posuere Fels Phar Etra Sodales.</a></h6>
+                                <span>Feb 02, 2017</span>
+                            </div>
+
+                            <div class="blog-item-one">
+                                <figure>
+                                    <img src="{% static 'web/images/resource/blog-2.jpg' %}" alt="">
+                                </figure>
+                                <h6><a href="#">Cras Semper Neque eu Est Facil isn’t.</a></h6>
+                                <span>Feb 02, 2017</span>
+                            </div>
+
+                            <div class="blog-item-one">
+                                <figure>
+                                    <img src="{% static 'web/images/resource/blog-3.jpg' %}" alt="">
+                                </figure>
+                                <h6><a href="#">In nec Magna eu Nisl Porta Pre.</a></h6>
+                                <span>Feb 02, 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Details -->
+
+</body>
+
+</html>
+
+    {% endblock  %}

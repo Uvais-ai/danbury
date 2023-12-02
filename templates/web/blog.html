@@ -1,0 +1,73 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Blog || Danbury || Responsive HTML 5 Template</title>
+
+</head>
+
+<body>
+   
+    <!-- Page Title -->
+    <section class="page-title sp-six" style="background: url({% static 'web/images/background/parallax-2.jpg' %});">
+        <div class="container">
+            <div class="page-title-area text-center">
+                <div class="title-text">
+                    <h1>Our Updates</h1>
+                </div>
+                <ul class="page-list">
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li>-</li>
+                    <li>Our Articles</li>
+                </ul>
+            </div>                
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+
+    <!-- Blog Section -->
+    <section class="blog-section sp-seven">
+        <div class="container">
+            <div class="row">
+                {% for blog in update %}  
+                <div class="news-block-one col-xl-4 col-lg-6 col-sm-12">             
+                    <div class="inner-box">     
+                                    
+                        <div class="image">
+                            <img src="{{blog.image.url}}" alt="">
+                            <div class="overlay-link">
+                                <div class="icon-box">
+                                    <a href="{% url 'blog-details' %}"><i class="flaticon-expand-screen"></i></a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="lower-content">
+                            <h5><a href="{% url 'blog-details' %}">{{blog.name}}</a></h5>
+                            <ul class="blog-info mt-15 mb-15">
+                                <li><i class="fa fa-user"></i><a href="#">{{blog.user}}</a></li>
+                                <li><i class="fa fa-calendar"></i>{{blog.date}}</li>
+                                <li><i class="fa fa-commenting-o"></i>{{blog.comment}}</li>
+                            </ul>
+                            <p>{{blog.description}}</p>
+                            <div class="link-btn">
+                                <a href="{% url 'blog-details' %}" class="theme-btn btn-style-five">Read More</a>
+                            </div>
+                        </div>              
+                    </div>
+                        </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Section -->
+
+</body>
+
+</html>
+
+    {% endblock  %}

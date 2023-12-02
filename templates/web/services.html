@@ -1,0 +1,62 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Services || Danbury || Responsive HTML 5 Template</title>
+
+</head>
+
+<body>
+
+    
+    <!-- Page Title -->
+    <section class="page-title sp-six" style="background: url({% static 'web/images/background/parallax-2.jpg' %});">
+        <div class="container">
+            <div class="page-title-area text-center">
+                <div class="title-text">
+                    <h1>Our Awards</h1> 
+                </div>
+                <ul class="page-list">
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li>-</li>
+                    <li>Our Services</li>
+                </ul>
+            </div>                
+        </div>
+    </section>
+    <!-- End Page Title -->
+
+
+    <!-- Service Section -->
+    <section class="service-section two sp-two">
+        <div class="container">
+            <div class="sec-title-one centered">
+                <h5>What We Do</h5>
+                <h2 class="Expertiseh2"><span class="Expertisespan">Our</span> Services</h2>
+                <div class="text mb-45">Discover how our array of services enriches Danbury's landscape, providing top-notch solutions that resonate with our commitment to excellence.</div>
+            </div>
+            <div class="row">
+                {% for service in award %}
+                   <div class="services-block-one two col-xl-3 col-md-6 col-sm-12">
+                       <div class="inner-box text-center">
+                           <div class="icon-box">
+                               <span class="{{service.spanclassname}}"></span>
+                           </div>
+                                <a href="{% url 'single-service' %}" class="tran4s"><h6>{{service.name}}</h6></a>
+                       </div>
+                   </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+</body>
+
+</html>
+
+    {% endblock  %}

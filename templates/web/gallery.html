@@ -1,0 +1,69 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Our Gallery || Danbury || Responsive HTML 5 Template</title>
+
+</head>
+
+    
+    <!-- Page Title -->
+    <section class="page-title sp-six" style="background: url({% static 'web/images/background/parallax-2.jpg' %});">
+        <div class="container">
+            <div class="page-title-area text-center">
+                <div class="title-text">
+                    <h1>Our Gallery</h1>
+                </div>
+                <ul class="page-list">
+                    <li><a href="{% url 'index' %}">home</a></li>
+                    <li>-</li>
+                    <li>Our Gallery</li>
+                </ul>
+            </div>                
+        </div>  
+    </section>
+    <!-- End Page Title -->
+
+
+    <!-- Gallery Section -->
+    <section class="gallery-section sp-eight">
+        <div class="container">
+            <div class="mixitup-gallery"> 
+                <div class="filter-list row clearfix">
+                    {% for image in images %}
+                    <div class="gallery-block-one mix healthy fitness col-xl-4 col-md-6 col-sm-12">
+                        <div class="image">
+                            <img src="{{image.image.url}}" alt="">
+                            <div class="overlay-link">
+                                {% comment %} <div class="icon-box">
+                                    <a href="#"><i class="flaticon-expand-screen"></i></a>
+                                </div>                                 {% endcomment %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>                
+            </div>
+        </div>  
+    </section>
+    <!-- End Gallery Section -->
+
+
+</body>
+
+</html>
+
+{% endblock  %}
+                                                        
+    
+
+
+
+
+    
+
+ 
